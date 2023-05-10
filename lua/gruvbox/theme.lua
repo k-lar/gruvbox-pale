@@ -146,7 +146,7 @@ function M.setup(config)
     markdownH1 = { fg = c.green, style = "bold" },
     markdownH2 = { fg = c.green, style = "bold" },
     markdownH3 = { fg = c.yellow, style = "bold" },
-    markdownH4 = { fg = c.yellow },
+    markdownH4 = { fg = c.yellow, style = "bold" },
     markdownH5 = { fg = c.yellow },
     markdownH6 = { fg = c.yellow },
     markdownLinkText = { fg = c.comment, style = "underline" },
