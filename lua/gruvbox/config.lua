@@ -19,7 +19,9 @@ config = {
   transparent = opt("transparent", false),
   commentStyle = opt("italic_comments", true) and "italic" or "NONE",
   keywordStyle = opt("italic_keywords", true) and "italic" or "NONE",
-  functionStyle = opt("italic_functions", false) and "italic" or "NONE",
+  -- TODO: Figure out way to have both italic and bold functions
+  -- functionStyle = opt("italic_functions", false) and "italic" or "NONE",
+  functionStyle = opt("bold_functions", false) and "bold" or "NONE",
   variableStyle = opt("italic_variables", false) and "italic" or "NONE",
   hideInactiveStatusline = opt("hide_inactive_statusline", false),
   terminalColors = opt("terminal_colors", true),
