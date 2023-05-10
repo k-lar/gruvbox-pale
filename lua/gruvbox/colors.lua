@@ -61,6 +61,22 @@ function M.setup(config)
     colors.prompt_border = "#45403d"
     colors.bg_visual = "#3c3836"
     colors.comment = "#6a635d"
+
+  -- set the background to pale
+  elseif vim.g.gruvbox_flat_style == "dark-pale" then
+    colors.bg = "#262626"
+    colors.bg2 ="#3a3a3a"
+    colors.blue = "#87afaf"
+    colors.green = "#afaf00"
+    colors.yellow = "#ffaf00"
+    colors.orange = "#ff8700"
+    colors.bg_highlight = "#3c3836"
+    colors.line_cursor = "#ebdbb2"
+    colors.border = colors.bg_highlight
+    colors.prompt_border = "#45403d"
+    colors.bg_visual = "#3c3836"
+    colors.comment = "#767676"
+    colors.fg_gutter = "#767676" -- TODO: fix fold having the same color as this
   end
 
   util.bg = colors.bg
