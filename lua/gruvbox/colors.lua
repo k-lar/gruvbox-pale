@@ -71,7 +71,7 @@ function M.setup(config)
     colors.yellow = "#ffaf00"
     colors.orange = "#ff8700"
     colors.bg_highlight = "#3c3836"
-    colors.line_cursor = "#ebdbb2"
+    colors.line_cursor = util.lighten(colors.bg, 0.97) -- util.darken("#282828", 0.90)
     colors.border = colors.bg_highlight
     colors.prompt_border = "#45403d"
     colors.bg_visual = "#3c3836"
