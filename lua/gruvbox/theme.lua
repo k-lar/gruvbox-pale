@@ -97,7 +97,7 @@ function M.setup(config)
     -- Repeat        = { }, --   for, do, while, etc.
     -- Label         = { }, --    case, default, etc.
     Operator = { fg = c.red }, -- "sizeof", "+", "*", etc.
-    Keyword = { fg = c.aqua, style = config.keywordStyle }, --  any other keyword
+    Keyword = { fg = c.red, style = config.keywordStyle }, --  any other keyword
     -- Exception     = { }, --  try, catch, throw
 
     PreProc = { fg = c.aqua }, -- (preferred) generic Preprocessor
