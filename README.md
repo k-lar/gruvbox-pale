@@ -1,8 +1,9 @@
-# Gruvbox Flat
+# Gruvbox Pale
 
-A dark beautiful Neovim theme written in Lua. [Coming soon] extra themes for Kitty and Alacritty
+A dark beautiful Neovim theme written in Lua.
 - Inspired by [sainnhe's gruvbox-material](https://github.com/sainnhe/gruvbox-material) but written in lua
 - A fork of [onedark.nvim](https://github.com/monsonjeremy/onedark.nvim)
+- And a fork of [gruvbox-flat](https://github.com/eddyekofo94/gruvbox-flat.nvim)
 
 <img width="1680" alt="rust code" src="./media/gruvbox-original.png">
 
@@ -48,13 +49,19 @@ Install the theme with your preferred package manager:
 [vim-plug](https://github.com/junegunn/vim-plug)
 
 ```vim
-Plug 'eddyekofo94/gruvbox-flat.nvim'
+Plug 'k-lar/gruvbox-pale'
+
+" Backup link
+Plug 'https://gitlab.com/k_lar/gruvbox-pale'
 ```
 
 [packer](https://github.com/wbthomason/packer.nvim)
 
 ```lua
-use 'eddyekofo94/gruvbox-flat.nvim'
+use 'k-lar/gruvbox-pale'
+
+-- Backup link
+use 'https://gitlab.com/k_lar/gruvbox-pale'
 ```
 
 ## 🚀 Usage
@@ -63,12 +70,12 @@ Enable the colorscheme:
 
 ```vim
 " Vim Script
-colorscheme gruvbox-flat
+colorscheme gruvbox-pale
 ```
 
 ```lua
 -- Lua
-vim.cmd[[colorscheme gruvbox-flat]]
+vim.cmd[[colorscheme gruvbox-pale]]
 ```
 
 To enable the `gruvbox` theme for `Lualine`, simply specify it in your lualine settings:
@@ -102,6 +109,13 @@ vim.g.gruvbox_flat_style = "hard"
 
 ```
 <img width="1680" alt="harder" src="./media/gruvbox-harder.png">
+
+To enable dark-pale mode
+```lua
+vim.g.gruvbox_flat_style = "dark-pale"
+
+```
+
 
 ## ⚙️ Configuration
 
@@ -143,7 +157,7 @@ let g:gruvbox_italic_functions = 1
 let g:gruvbox_sidebars = [ "qf", "vista_kind", "terminal", "packer" ]
 
 " Load the colorscheme
-colorscheme gruvbox-flat
+colorscheme gruvbox-pale
 ```
 
 ### Making `undercurls` work properly in **Tmux**
