@@ -68,7 +68,7 @@ function M.setup(config)
     StatusLineNC = { fg = c.fg_gutter, bg = c.bg_statusline }, -- status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
     TabLine = { bg = c.bg_statusline, fg = c.fg_gutter }, -- tab pages line, not active tab page label
     TabLineFill = { bg = c.black }, -- tab pages line, where there are no labels
-    TabLineSel = { fg = c.black, bg = c.blue }, -- tab pages line, active tab page label
+    TabLineSel = { fg = c.black, bg = c.green }, -- tab pages line, active tab page label
     Title = { fg = c.blue, style = "bold" }, -- titles for output from ":set all", ":autocmd" etc.
     Visual = { bg = c.bg_visual }, -- Visual mode selection
     VisualNOS = { bg = c.bg_visual }, -- Visual mode selection when vim is "Not Owning the Selection".
@@ -140,12 +140,16 @@ function M.setup(config)
     mkdCodeEnd = { fg = c.yellow, style = "bold" },
     -- mkdLink = { fg = c.blue, style = "underline" },
 
-    markdownHeadingDelimiter = { fg = c.orange, style = "bold" },
+    markdownHeadingDelimiter = { fg = c.orange },
     markdownCode = { fg = c.yellow },
-    markdownCodeBlock = { fg = c.yellow },
-    markdownH1 = { fg = c.red, style = "bold" },
-    markdownH2 = { fg = c.blue, style = "bold" },
-    markdownLinkText = { fg = c.blue, style = "underline" },
+    markdownCodeBlock = { fg = c.aqua },
+    markdownH1 = { fg = c.green, style = "bold" },
+    markdownH2 = { fg = c.green, style = "bold" },
+    markdownH3 = { fg = c.yellow, style = "bold" },
+    markdownH4 = { fg = c.yellow },
+    markdownH5 = { fg = c.yellow },
+    markdownH6 = { fg = c.yellow },
+    markdownLinkText = { fg = c.comment, style = "underline" },
 
     debugPC = { bg = c.bg_sidebar }, -- used for highlighting the current line in terminal-debug
     debugBreakpoint = { bg = util.darken(c.info, 0.1), fg = c.info }, -- used for breakpoint colors in terminal-debug
