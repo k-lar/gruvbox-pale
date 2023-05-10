@@ -82,7 +82,7 @@ function M.setup(config)
     -- default,
     -- Uncomment and edit if you want more specific syntax highlighting.
 
-    Constant = { fg = c.orange }, -- (preferred) any constant
+    Constant = { fg = c.purple }, -- (preferred) any constant
     String = { fg = c.green }, --   a string constant: "this is a string"
     Character = { fg = c.green }, --  a character constant: 'c', '\n'
     Boolean = { fg = c.purple }, --  a boolean constant: TRUE, false
@@ -205,7 +205,7 @@ function M.setup(config)
     TSDanger = { fg = c.bg, bg = c.error },
     TSConstructor = { fg = c.aqua }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
     -- TSConditional       = { };    -- For keywords related to conditionnals.
-    TSConstant = { fg = c.yellow }, -- For constants
+    TSConstant = { fg = c.purple }, -- For constants
     -- TSConstBuiltin      = { };    -- For constant that are built in the language: `nil` in Lua.
     -- TSConstMacro        = { };    -- For constants that are defined by macros: `NULL` in C.
     -- TSError             = { };    -- For syntax/parser errors.
