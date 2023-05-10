@@ -44,7 +44,7 @@ function M.setup(config)
   }
 
   -- set the background to dark
-  if vim.g.gruvbox_flat_style == "dark" then
+  if vim.g.gruvbox_pale_style == "dark" then
     colors.bg = "#282828"
     colors.bg2 = "#242424"
     colors.bg_highlight = "#45403d"
@@ -52,7 +52,7 @@ function M.setup(config)
     colors.prompt_border = "#45403d"
 
   -- set the background to hard
-  elseif vim.g.gruvbox_flat_style == "hard" then
+  elseif vim.g.gruvbox_pale_style == "hard" then
     colors.bg = "#1d2021"
     colors.bg2 ="#17191a"
     colors.bg_highlight = "#3c3836"
@@ -63,7 +63,7 @@ function M.setup(config)
     colors.comment = "#6a635d"
 
   -- set the background to pale
-  elseif vim.g.gruvbox_flat_style == "dark-pale" then
+  elseif vim.g.gruvbox_pale_style == "dark-pale" then
     colors.bg = "#262626"
     colors.bg2 ="#3a3a3a"
     colors.blue = "#87afaf"

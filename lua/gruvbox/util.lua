@@ -110,7 +110,7 @@ end
 
 --- Delete the autocmds when the theme changes to something else
 function util.onColorScheme()
-  if vim.g.colors_name ~= "gruvbox-flat" then
+  if vim.g.colors_name ~= "gruvbox-pale" then
     vim.cmd([[autocmd! gruvbox]])
     vim.cmd([[augroup! gruvbox]])
   end
@@ -122,7 +122,7 @@ function util.autocmds(config)
   vim.cmd([[  autocmd!]])
   vim.cmd([[  autocmd ColorScheme * lua require("gruvbox.util").onColorScheme()]])
   if config.dev then
-    vim.cmd([[  autocmd BufWritePost */lua/gruvbox/** nested colorscheme gruvbox-flat]])
+    vim.cmd([[  autocmd BufWritePost */lua/gruvbox/** nested colorscheme gruvbox-pale]])
   end
   for _, sidebar in ipairs(config.sidebars) do
     if sidebar == "terminal" then
@@ -197,7 +197,7 @@ function util.load(theme)
   if vim.fn.exists("syntax_on") then vim.cmd("syntax reset") end
 
   vim.o.termguicolors = true
-  vim.g.colors_name = "gruvbox-flat"
+  vim.g.colors_name = "gruvbox-pale"
   -- vim.api.nvim__set_hl_ns(ns)
   -- load base theme
   util.syntax(theme.base)
