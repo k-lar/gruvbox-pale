@@ -85,14 +85,14 @@ function M.setup(config)
     Constant = { fg = c.orange }, -- (preferred) any constant
     String = { fg = c.green }, --   a string constant: "this is a string"
     Character = { fg = c.green }, --  a character constant: 'c', '\n'
-    -- Number        = { }, --   a number constant: 234, 0xff
-    -- Boolean       = { }, --  a boolean constant: TRUE, false
-    -- Float         = { }, --    a floating point constant: 2.3e10
+    Boolean = { fg = c.purple }, --  a boolean constant: TRUE, false
+    Number = { fg = c.purple }, --   a number constant: 234, 0xff
+    Float = { fg = c.purple }, --    a floating point constant: 2.3e10
 
     Identifier = { fg = c.red, style = config.variableStyle }, -- (preferred) any variable name
     Function = { fg = c.blue, style = config.functionStyle }, -- function name (also: methods for classes)
 
-    Statement = { fg = c.purple }, -- (preferred) any statement
+    Statement = { fg = c.red }, -- (preferred) any statement
     -- Conditional   = { }, --  if, then, else, endif, switch, etc.
     -- Repeat        = { }, --   for, do, while, etc.
     -- Label         = { }, --    case, default, etc.
@@ -227,7 +227,7 @@ function M.setup(config)
     TSParameter = { fg = c.red }, -- For parameters of a function.
     -- TSParameterReference= { };    -- For references to parameters of a function.
     TSProperty = { fg = c.red }, -- Same as `TSField`.
-    TSPunctDelimiter = { fg = c.red }, -- For delimiters ie: `.`
+    TSPunctDelimiter = { fg = c.orange }, -- For delimiters ie: `.`
     TSPunctBracket = { fg = util.darken(c.orange, 0.85) }, -- For brackets and parens.
     TSPunctSpecial = { fg = util.darken(c.orange, 0.85) }, -- For special punctutation that does not fall in the catagories before.
     -- TSRepeat            = { };    -- For keywords related to loops.
