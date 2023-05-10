@@ -83,43 +83,43 @@ To enable the `gruvbox` theme for `Lualine`, simply specify it in your lualine s
 ```lua
 require('lualine').setup {
   options = {
-    theme = 'gruvbox-flat'
+    theme = 'gruvbox-pale'
     -- ... your lualine config
   }
 }
 ```
 
-To enable the `gruvbox-flat` colorscheme for `Lightline`:
+To enable the `gruvbox-pale` colorscheme for `Lightline`:
 
 ```vim
 " Vim Script
-let g:lightline = {'colorscheme': 'gruvbox-flat'}
+let g:lightline = {'colorscheme': 'gruvbox-pale'}
 ```
 
 To enable darker mode
 ```lua
-vim.g.gruvbox_flat_style = "dark"
+vim.g.gruvbox_pale_style = "dark"
 
 ```
 <img width="1680" alt="rust code" src="./media/gruvbox-dark.png">
 
 To enable harder mode
 ```lua
-vim.g.gruvbox_flat_style = "hard"
+vim.g.gruvbox_pale_style = "hard"
 
 ```
 <img width="1680" alt="harder" src="./media/gruvbox-harder.png">
 
 To enable dark-pale mode
 ```lua
-vim.g.gruvbox_flat_style = "dark-pale"
+vim.g.gruvbox_pale_style = "dark-pale"
 
 ```
 
 
 ## ⚙️ Configuration
 
-> ❗️ configuration needs to be set **BEFORE** loading the color scheme with `colorscheme gruvbox-flat`
+> ❗️ configuration needs to be set **BEFORE** loading the color scheme with `colorscheme gruvbox-pale`
 
 | Option                           | Default | Description                                                                                                                                                     |
 | -------------------------------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -148,7 +148,7 @@ vim.g.gruvbox_colors = { hint = "orange", error = "#ff0000" }
 vim.g.gruvbox_theme = { TabLineSel = { bg = "orange" } }
 
 -- Load the colorscheme
-vim.cmd[[colorscheme gruvbox-flat]]
+vim.cmd[[colorscheme gruvbox-pale]]
 ```
 
 ```vim
