@@ -233,7 +233,7 @@ function M.setup(config)
     -- TSRepeat            = { };    -- For keywords related to loops.
     -- TSString            = { };    -- For strings.
     TSStringRegex = { fg = c.orange }, -- For regexes.
-    TSStringEscape = { fg = c.red }, -- For escape characters within a string.
+    TSStringEscape = { fg = c.orange }, -- For escape characters within a string.
     -- TSSymbol            = { };    -- For identifiers referring to symbols or atoms.
     -- TSType              = { };    -- For types.
     -- TSTypeBuiltin       = { };    -- For builtin types.
