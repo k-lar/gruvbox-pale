@@ -1,13 +1,13 @@
 # Gruvbox Pale
 
-A dark beautiful Neovim theme written in Lua.
+A dark but pale and beautiful Neovim theme written in Lua.
 - Inspired by [sainnhe's gruvbox-material](https://github.com/sainnhe/gruvbox-material) but written in lua
 - A fork of [onedark.nvim](https://github.com/monsonjeremy/onedark.nvim)
 - And a fork of [gruvbox-flat](https://github.com/eddyekofo94/gruvbox-flat.nvim)
 
-<img width="1680" alt="rust code" src="./media/gruvbox-original.png">
+![golang](https://gitlab.com/k_lar/gruvbox-pale/uploads/fa303bb4b53bc1d67c2ba5b502aea482/golang.png)
 
-<img width="1680" alt="pallet" src="./media/pallet-gruvbox.png">
+![fzf-lua](https://gitlab.com/k_lar/gruvbox-pale/uploads/f0c031bc32a311fa12d91e083da0246c/fzf-lua.png)
 
 ## ✨ Features
 
@@ -96,26 +96,13 @@ To enable the `gruvbox-pale` colorscheme for `Lightline`:
 let g:lightline = {'colorscheme': 'gruvbox-pale'}
 ```
 
-To enable darker mode
-```lua
-vim.g.gruvbox_pale_style = "dark"
-
-```
-<img width="1680" alt="rust code" src="./media/gruvbox-dark.png">
-
-To enable harder mode
-```lua
-vim.g.gruvbox_pale_style = "hard"
-
-```
-<img width="1680" alt="harder" src="./media/gruvbox-harder.png">
-
 To enable dark-pale mode
 ```lua
 vim.g.gruvbox_pale_style = "dark-pale"
 
 ```
 
+![markdown](https://gitlab.com/k_lar/gruvbox-pale/uploads/2f5221035b011899abc0c053590ca161/markdown.png)
 
 ## ⚙️ Configuration
 
@@ -126,7 +113,7 @@ vim.g.gruvbox_pale_style = "dark-pale"
 | gruvbox_terminal_colors          | `true`  | Configure the colors used when opening a `:terminal` in Neovim                                                                                                  |
 | gruvbox_italic_comments          | `true`  | Make comments italic                                                                                                                                            |
 | gruvbox_italic_keywords          | `true`  | Make keywords italic                                                                                                                                            |
-| gruvbox_italic_functions         | `false` | Make functions italic                                                                                                                                           |
+| gruvbox_bold_functions           | `false` | Make functions bold                                                                                                                                             |
 | gruvbox_italic_variables         | `false` | Make variables and identifiers italic                                                                                                                           |
 | gruvbox_transparent              | `false` | Enable this to disable setting the background color                                                                                                             |
 | gruvbox_hide_inactive_statusline | `false` | Enabling this option, will hide inactive statuslines and replace them with a thin border instead. Should work with the standard **StatusLine** and **LuaLine**. |
@@ -138,7 +125,7 @@ vim.g.gruvbox_pale_style = "dark-pale"
 
 ```lua
 -- Example config in Lua
-vim.g.gruvbox_italic_functions = true
+vim.g.gruvbox_bold_functions = true
 vim.g.gruvbox_sidebars = { "qf", "vista_kind", "terminal", "packer" }
 
 -- Change the "hint" color to the "orange" color, and make the "error" color bright red
@@ -153,7 +140,7 @@ vim.cmd[[colorscheme gruvbox-pale]]
 
 ```vim
 " Example config in VimScript
-let g:gruvbox_italic_functions = 1
+let g:gruvbox_bold_functions = 1
 let g:gruvbox_sidebars = [ "qf", "vista_kind", "terminal", "packer" ]
 
 " Load the colorscheme
